@@ -1,0 +1,19 @@
+openapi: 3.0.1
+info:
+  title: Lead Management API
+  version: 1.0.0
+
+paths:
+  /leads:
+    get:
+      summary: Get all leads
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              example:
+                - id: 1
+                  name: John Doe
+                  email: john@gmail.com
+                  status: NEW
